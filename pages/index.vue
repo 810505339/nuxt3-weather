@@ -1,3 +1,7 @@
+<script lang="ts" setup>
+navigateTo('/weather')
+</script>
+
 <template>
   <div>
     <Suspense>
