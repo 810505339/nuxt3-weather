@@ -1,6 +1,9 @@
 import { defineNuxtConfig } from 'nuxt'
 
 export default defineNuxtConfig({
+  runtimeConfig: {
+    KEY: process.env.KEY
+  },
   modules: [
     '@vueuse/nuxt',
     '@unocss/nuxt',
@@ -9,7 +12,7 @@ export default defineNuxtConfig({
   ],
   experimental: {
     reactivityTransform: true,
-    viteNode: true,
+    //viteNode: true,
   },
   unocss: {
     preflight: true,
